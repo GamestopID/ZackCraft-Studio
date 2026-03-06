@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- IMPORTANT: cegah zoom aneh di mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Store</title>
+
+  <link rel="stylesheet" href="store.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="store-page">
+  
+  <!-- ===== STORE NAVBAR ===== -->
+<header class="store-nav-wrap">
+
+  <nav class="store-navbar">
+
+    <!-- LOGO -->
+    <div class="store-logo">
+      <img src="/img/logo.png" alt="Logo">
+      <span>ZackCraft</span>
+    </div>
+
+    <!-- HAMBURGER -->
+    <button class="store-toggle" id="storeToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="store-nav-panel" id="storeNav">
+
+      <div class="store-links">
+        <a href="/index.html">Home</a>
+        <a href="store.html" class="active">Store</a>
+        <a href="/projects/project.html">Projects</a>
+        <a href="/social/social.html">Social</a>
+      </div>
+
+      <!-- CART -->
+      <div class="store-cart">
+        🛒 <span>Cart</span>
+      </div>
+
+    </div>
+
+  </nav>
+
+</header>
+
+<!-- overlay -->
+<div id="storeOverlay"></div>
+  
+<!-- ===== HERO STORE ===== -->
+<section class="store-hero">
+
+  <div class="store-hero-content">
+
+    <h1 class="store-title">
+      Official <span>Store</span>
+    </h1>
+
+    <p class="store-sub">
+      Menyediakan Berbagai Keperluan Minecraft dan Layanan Lainnya!
+    </p>
+
+    <div class="store-buttons">
+      <a href="#products" class="btn primary">Open Store</a>
+      <a href="/" class="btn secondary">Back Home</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== STORE PLANS ===== -->
+<section class="store-plans" id="products">
+
+  <div class="plans-container">
+
+    <h2 class="plans-title">Our Packages</h2>
+    <p class="plans-sub">Pilih layanan mana yang anda inginkan!</p>
+
+    <div class="plans-grid">
+
+      <!-- 1 Hosting -->
+      <article class="plan-card">
+        <h3>Hosting</h3>
+        <p class="card-desc">
+          Nikmati layanan hosting cepat dan stabil untuk Minecraft, Bot WhatsApp, GTA, 
+          dan proyek digital lainnya. Mulai sekarang, kelola server dan project-mu dengan mudah tanpa ribet!
+        </p>
+
+        <div class="cta-row">
+          <a href="/store/host/host.html" class="btn primary">View Plans</a>
+        </div>
+
+        <small class="cta-hint">See package options and pricing</small>
+      </article>
+
+      <!-- 2 Addon Plugin -->
+      <article class="plan-card"
+        data-points="✅ Bebas request semaunya|✅ Pengerjaan cepat|✅ Kualitas terbaik!">
+        <h3>Minecraft Addon / Plugin Development</h3>
+        <p class="card-desc">
+          Kembangkan server Minecraft-mu dengan Addon dan Plugin unik hasil tim profesional. 
+          Buat pengalaman bermain lebih seru, kreatif, dan berbeda dari biasanya!
+        </p>
+
+        <div class="cta-row">
+          <a href="#" class="btn primary wa-checkout" data-wa="6283147587839">Chat via WhatsApp</a>
+          <a href="#" class="product-info-link" data-info>Details</a>
+        </div>
+
+        <small class="cta-hint">Send your concept to get a quick estimate</small>
+      </article>
+
+      <!-- 3 Logo -->
+      <article class="plan-card"
+        data-points="✅ Bebas request style logonya|✅ Detail dan Penampilan yang menarik!|✅ Pengerjaan cepat!">
+        <h3>Logo Design</h3>
+        <p class="card-desc">
+          Buat identitas brand-mu lebih berkesan dengan desain logo profesional. 
+          Tampil beda, kreatif, dan mudah diingat di setiap platform!
+        </p>
+
+        <div class="cta-row">
+          <a href="#" class="btn primary wa-checkout" data-wa="6283147587839">Chat via WhatsApp</a>
+          <a href="#" class="product-info-link" data-info>Details</a>
+        </div>
+
+        <small class="cta-hint">Share name + style references if available</small>
+      </article>
+
+      <!-- 4 Website -->
+      <article class="plan-card"
+        data-points="✅ Bebas request style websitenya|✅ Responsif mobile dan desktop website|✅ Bebas custom apapun!">
+        <h3>Website Development</h3>
+        <p class="card-desc">
+          Bangun website impianmu dengan desain modern dan fungsional. 
+          Cepat, responsif, dan siap meningkatkan visibilitas bisnismu online!
+        </p>
+
+        <div class="cta-row">
+          <a href="#" class="btn primary wa-checkout" data-wa="6283147587839">Chat via WhatsApp</a>
+          <a href="#" class="product-info-link" data-info>Details</a>
+        </div>
+
+        <small class="cta-hint">Tell us the page list + deadline for a quote</small>
+      </article>
+
+      <!-- 5 Video -->
+      <article class="plan-card"
+        data-points="✅ Smooth transitions + clean effects|✅ Audio leveling + basic color correction|✅ Bebas custom apapun!">
+        <h3>Video Editing</h3>
+        <p class="card-desc">
+          Ubah rekaman biasa jadi video keren dan profesional. 
+          Cocok untuk konten sosial media atau promosi bisnismu!
+        </p>
+
+        <div class="cta-row">
+          <a href="#" class="btn primary wa-checkout" data-wa="6283147587839">Chat via WhatsApp</a>
+          <a href="#" class="product-info-link" data-info>Details</a>
+        </div>
+
+        <small class="cta-hint">Share footage length + reference style</small>
+      </article>
+
+    </div>
+
+  </div>
+
+  <!-- ===== PRODUCT INFO OVERLAY ===== -->
+  <div class="info-overlay" id="infoOverlay" aria-hidden="true">
+    <div class="info-modal" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+      <button class="info-close" id="infoClose" aria-label="Close">✕</button>
+
+      <h3 class="info-title" id="infoTitle">Title</h3>
+      <p class="info-text" id="infoText">Description</p>
+
+      <!-- points hanya muncul di Details -->
+      <ul class="info-points" id="infoPoints"></ul>
+    </div>
+  </div>
+
+</section>
+
+
+
+<script src="store.js"></script>
+
+</body>
+</html>

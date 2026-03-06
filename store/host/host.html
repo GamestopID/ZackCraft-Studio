@@ -1,0 +1,197 @@
+<!-- host.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosting</title>
+
+    <link rel="stylesheet" href="host.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="nav-wrap">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/img/logo.png" alt="Logo" />
+          <span>ZackCraft</span>
+        </div>
+
+        <button
+          class="menu-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="navMenu">
+          <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/store/store.html">Store</a>
+            <a href="/projects/project.html">Projects</a>
+            <a href="/social/social.html">Social</a>
+          </div>
+
+          <div class="cart-btn">🛒 <span>Cart</span></div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="navOverlay"></div>
+
+    <!-- ===== PLANS SECTION ===== -->
+    <section class="store-plans">
+      <div class="plans-container">
+        <!-- INTRO / PENJELASAN (V2) -->
+        <div class="plans-intro v2">
+          <span class="intro-pill">Hosting Plans</span>
+          <h2>Pilih Paket Hosting Kamu</h2>
+          <p>
+            Kami menyediakan beberapa paket hosting terbaik untuk website,
+            server, atau project kamu. Pilih yang paling cocok dan mulai
+            sekarang.
+          </p>
+
+          <div class="intro-meta">
+            <div class="meta-item">⚡ Setup cepat!</div>
+            <div class="meta-item">🔒 Keamanan 100%</div>
+            <div class="meta-item">💬 Fast Respon!</div>
+          </div>
+        </div>
+
+        <!-- GRID PLANS (V2) -->
+        <div class="plans-grid new-grid">
+          <!-- BASIC -->
+          <article class="plan-card v2" data-plan="Basic" data-price="10000">
+            <div class="plan-top">
+              <span class="plan-pill">Starter</span>
+              <h3 class="plan-name">Basic</h3>
+
+              <div class="plan-price">Rp10.000 <span>/bulan</span></div>
+              <p class="plan-sub">Cocok untuk testing server</p>
+            </div>
+
+            <ul class="plan-features">
+              <li><span class="icon">⚡</span> 5GB Storage</li>
+              <li><span class="icon">🌐</span> 12GB DiskSpace</li>
+              <li><span class="icon">🛡️</span> ANTI DDoS</li>
+              <li><span class="icon">📉</span> ANTI DOWN</li>
+            </ul>
+
+            <button class="plan-btn v2">Checkout</button>
+          </article>
+
+          <!-- PRO (POPULAR) -->
+          <article
+            class="plan-card v2 popular"
+            data-plan="Pro"
+            data-price="25000"
+          >
+            <div class="plan-top">
+              <span class="plan-pill hot">Paling Laris</span>
+              <h3 class="plan-name">Pro</h3>
+
+              <div class="plan-price">Rp20.000 <span>/bulan</span></div>
+              <p class="plan-sub">Cocok untuk server jangka panjang</p>
+            </div>
+
+            <ul class="plan-features">
+              <li><span class="icon">⚡</span> 12GB Storage</li>
+              <li><span class="icon">🌐</span> 24GB DiskSpace</li>
+              <li><span class="icon">🔗</span> FREE SUBDOMAIN</li>
+              <li><span class="icon">🚀</span> FULL OPTIMASI+PROTECT</li>
+            </ul>
+
+            <button class="plan-btn v2">Checkout</button>
+          </article>
+
+          <!-- ENTERPRISE -->
+          <article
+            class="plan-card v2"
+            data-plan="Enterprise"
+            data-price="50000"
+          >
+            <div class="plan-top">
+              <span class="plan-pill">Scale</span>
+              <h3 class="plan-name">Enterprise</h3>
+
+              <div class="plan-price">Rp35.000 <span>/bulan</span></div>
+              <p class="plan-sub">
+                Cocok untuk server dengan performance meningkat
+              </p>
+            </div>
+
+            <ul class="plan-features">
+              <li><span class="icon">⚡</span> 15GB STORAGE</li>
+              <li><span class="icon">🌐</span> 30GB DISKSPACE</li>
+              <li><span class="icon">🕒</span> 24/7 PREMIUM SUPPORT</li>
+              <li><span class="icon">🧱</span> SECURITY LAYER</li>
+            </ul>
+
+            <button class="plan-btn v2">Checkout</button>
+          </article>
+
+          <!-- BUSINESS -->
+          <article class="plan-card v2" data-plan="Business" data-price="80000">
+            <div class="plan-top">
+              <span class="plan-pill">Performance</span>
+              <h3 class="plan-name">Business</h3>
+
+              <div class="plan-price">Rp50.000 <span>/bulan</span></div>
+              <p class="plan-sub">
+                Cocok untuk server yang minim lag dan jangka panjang
+              </p>
+            </div>
+
+            <ul class="plan-features">
+              <li><span class="icon">💾</span> 20GB STORAGE</li>
+              <li><span class="icon">🚀</span> HIGH PERFORMANCE SERVER</li>
+              <li><span class="icon">🧑‍💻</span> DEDICATED SUPPORT</li>
+              <li><span class="icon">📈</span> PREMIUM SECURITY</li>
+            </ul>
+
+            <button class="plan-btn v2">Checkout</button>
+          </article>
+
+          <!-- CUSTOM -->
+          <article
+            class="plan-card v2 custom"
+            data-plan="Custom"
+            data-price="custom"
+          >
+            <div class="plan-top">
+              <span class="plan-pill ghost">Flexible</span>
+              <h3 class="plan-name">Custom</h3>
+
+              <div class="plan-price">Custom <span>Bulan</span></div>
+              <p class="plan-sub">
+                Atur sendiri resource sesuai kebutuhan project kamu.
+              </p>
+            </div>
+
+            <ul class="plan-features">
+              <li><span class="icon">🧩</span> SESUAI KEBUTUHAN</li>
+              <li><span class="icon">⚙️</span> PILIH RESOURCE SENDIRI</li>
+              <li><span class="icon">🤝</span> KONSULTASI LANGSUNG</li>
+              <li><span class="icon">📌</span> FREE SUBDOMAIN</li>
+            </ul>
+
+            <button class="plan-btn v2">Contact Us</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script src="host.js"></script>
+  </body>
+</html>
